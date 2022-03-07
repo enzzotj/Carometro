@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Quintessential&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/linhas_fundo.png);
+}
+
+main {
+    margin-top: 14vh;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+input[type="file"] {
+
+    display: none;
+}
+
+/* ==============================   MODAL   ===============================================    */
+
+.foto_perfil_modal {
+    width: 157px;
+    height: 157px;
+    border-radius: 78px;
+
+}
+
+.foto_modal {
+    height: 100%;
+    width: 100%;
+    border-radius: 78px;
+}
+
+.box_informações_modal {
+    display: flex;
+    flex-direction: column;
+    height: 38%;
+}
+
+.box_modal {
+    display: flex;
+    height: 78vh;
+    width: 43vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box_foto_nome_modal {
+    display: flex;
+    flex-direction: column;
+    height: 66%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box_informações_modal span {
+    font-size: 27px;
+
+
+}
+
+.box_span {
+    display: flex;
+}
+
+.box_span_key_modal {
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.span_value_modal {
+    font-size: 27px;
+    margin-left: 10px;
+}
+
+/* ==============================   HEADER   ===============================================    */
+
+.container_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 11vh;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    border-bottom: 1px solid #2C344F;
+    background-image: url(../img/linhas_fundo.png);
+
+
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+    width: 40vw;
+}
+
+.redirecionamento_header {
+    color: #2C344F;
+
+    font-size: 1.2vw;
+    font-family: 'Cardo', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* ==============================   HEADER   ===============================================    */
+
+
+/* ==============================   LOGIN   ===============================================    */
+
+.login {
+    display: flex;
+    height: 100vh;
+}
+
+.banner_login {
+    width: 100%;
+    height: 100%;
+
+    opacity: 80%;
+    box-shadow: 12px 10px 35px -10px rgba(0, 0, 0, 0.75);
+}
+
+
+.conteudo_login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../img/Banner_login.png);
+    background-size: cover;
+
+}
+
+.logo_login {
+    width: 11vw;
+    height: 10vw;
+}
+
+.caixa_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 42vw;
+    height: 35vw;
+}
+
+.formulario_login input {
+    width: 30vw;
+    height: 4vw;
+    padding-left: 30px;
+    box-sizing: border-box;
+    margin-bottom: 2vw;
+    background: transparent;
+    border: 0;
+    border-bottom: #F5F5F5 2px solid;
+    outline: 0;
+    color: #fff;
+
+}
+
+.formulario_login input::placeholder {
+    color: #fff;
+    font-size: 17px;
+
+}
+
+.botao_login {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    width: 395px;
+    height: 4vw;
+
+    background-color: #FFFAFA;
+    box-shadow: 6px 10px 35px -10px #FFFAFA;
+
+    border-style: none;
+    border-radius: 5px;
+
+    color: #2C344F;
+    font-size: 1.3vw;
+    font-family: 'Noto Serif SC';
+    text-transform: uppercase;
+
+    background-image: url(../img/linhas_fundo.png);
+    background-size: cover;
+
+}
+
+.botao_login:hover {
+    transform: scale(1.001);
+    background: linear-gradient(180deg, #FFFAFA 41.67%, #f8f8f8 100%);
+}
+
+.seta_login {
+    height: 50px;
+    width: 60px;
+    margin-left: 60px;
+    margin-right: 30px;
+}
+
+.formulario_login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ==============================   LOGIN   ===============================================    */
+
+
+/* ==============================   HOME   ===============================================    */
+.organizador_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_redirect {
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+}
+
+.btn_redirect img {
+    height: 80px;
+}
+
+.container_salas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 48%;
+
+
+}
+
+.box_sala {
+    height: 200px;
+    width: 50%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    background-color: #0D2538;
+    border-radius: 20px;
+    margin-bottom: 2vh;
+    padding: 35px;
+}
+
+.box_titulo {
+    font-size: 24px;
+    color: #F5F5F5;
+}
+
+.box_body {
+    height: 65px;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container_cdSala {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: #0D2538 2px solid;
+    border-radius: 10px;
+    width: 48%;
+    padding: 50px 0 ;
+    box-sizing: border-box;
+
+}
+
+.titulo_cdSala {
+    font-size: 1.8vw;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.form_cdSala {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.formulario_cdSala {
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+}
+
+.input_cdSala {
+    width: 300px;
+    height: 30px;
+    margin-top: 50px;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: #2C344F 2px solid;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-position: 260px;
+    font-size: 15px;
+}
+
+.input_cdSala::placeholder {
+    color: #000;
+    font-size: 15px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    padding: 0 20px;
+
+    background: url(../img/AbrirSelect.png) no-repeat;
+
+
+}
+
+.botao_cdSala {
+    width: 300px;
+    height: 35px;
+    margin-top: 50px;
+    background-color: #0D2538;
+    box-shadow: 6px 10px 35px -10px #2C344F;
+    color: #fff;
+    font-size: 17px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    border-style: none;
+    border-radius: 5px;
+}
+
+.botao_cdSala:hover {
+    transform: scale(1.001);
+    background: linear-gradient(180deg, #0D2538 41.67%, #2C344F 100%);
+}
+
+.seta_cdSala {
+    height: 30px;
+    margin-left: 65px;
+    margin-right: 20px;
+}
+
+/* ==============================   HOME   ===============================================    */
+
+
+/* ==============================   CAROMETRO   ===============================================    */
+
+.imagem_logo {
+    height: 120px;
+    width: 300px;
+}
+
+.container_foto_carometro {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+}
+
+.imagem_logo {
+    margin-left: 50px;
+}
+
+.pesquisa {
+    background-image: url(../img/lupa.png);
+}
+
+.pesquisa input {
+    width: 50px;
+    color: black;
+}
+
+.container_alunos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.box_aluno {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 13px;
+    margin-bottom: 2vh;
+    padding: 20px;
+}
+
+.box_dados_alunos_carometro {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome_aluno {
+    color: black;
+    font-size: 21px;
+    padding-left: 18px;
+    padding-top: 7px;
+}
+
+.situacao_aluno {
+    font-size: 21px;
+    padding-left: 18px;
+    padding-bottom: 7px;
+}
+
+.seta {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.container_header_carometro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 17vw;
+}
+
+.main_carometro {
+    margin-top: 0px;
+    margin-left: 16.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_box_alunos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 89%;
+    flex-wrap: wrap;
+}
+
+.box_pesquisa-carometro {
+    margin-left: 17vw;
+}
+
+.lupa_pesquisa_carometro {
+    height: 48px;
+    width: 48px;
+    border-bottom: black 2px solid;
+    margin-bottom: 22px;
+}
+
+.input_pesquisa_carometro {
+    width: 28vw;
+    height: 27.5px;
+    background: transparent;
+    border: 0;
+    border-bottom: black 2px solid;
+    outline: 0;
+    box-sizing: border-box;
+    padding-bottom: 11px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.box_pesquisa_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_aluno_carometro {
+    width: 249px;
+    height: 379px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    margin-top: 40px;
+}
+
+.foto_aluno_box_carometro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 251px;
+}
+
+.foto_aluno {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+
+/* ==============================   CAROMETRO   ===============================================    */
+
+/*=============================== CADASTRO ===================================================== */
+
+.container_cadastro {
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+}
+
+.header_cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_cadastro {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.input_foto {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.img_perfilCadastro {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.input_file {
+    background-color: transparent;
+    color: #0D2538;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.body_cadastro {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.input_cadastro {
+    width: 450px;
+    height: 55px;
+    background-color: transparent;
+    outline: 0;
+    border: #0D2538 2px solid;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-position: 370px;
+    font-size: 18px;
+}
+
+.input_cadastro::placeholder {
+    color: #000;
+
+}
+
+.botao_cadastro {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    width: 450px;
+    height: 55px;
+
+    background-color: #0D2538;
+    box-shadow: 6px 10px 35px -10px #0D2538;
+
+    border-style: none;
+    border-radius: 20px;
+
+    color: #fff;
+    font-size: 1.2vw;
+    font-family: 'Noto Serif SC';
+    text-transform: uppercase;
+
+}
+
+.botao_cadastro:hover {
+    transform: scale(1.001);
+    background: linear-gradient(180deg, #0D2538 41.67%, #2C344F 100%);
+}
+
+.seta_cadastro {
+    height: 55px;
+    width: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/*=============================== CADASTRO ===================================================== */
+
+
+/*=============================== PERFIL ===================================================== */
+
+.input_file_perfil {
+    background-color: transparent;
+    color: #0D2538;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    font-size: 22px;
+    width: 121px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.imagem_logo {
+    height: 120px;
+    width: 300px;
+    margin-left: 284px;
+}
+
+.container_foto {
+    height: 210px;
+    display: flex;
+    justify-content: right;
+}
+
+.contaier_foto_editar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.foto_perfil {
+    width: 175px;
+    height: 175px;
+    border-radius: 90px;
+}
+
+.margin_foto {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+
+}
+
+.estilo_editar_button {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+.container_info {
+    height: 40px;
+    width: 400px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(62, 81, 143, 0.7);
+    border-radius: 10px;
+}
+
+.margin_info {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    color: #A5A5A5;
+    font-size: 30px;
+}
+
+.margin_top_info {
+    margin-top: 40px;
+}
+
+.margin_geral_info {
+    margin-left: 350px;
+}
+
+.margin_left_info {
+    margin-left: 10px;
+}
+
+.input_cadastro_perfil {
+    width: 450px;
+    height: 55px;
+    background-color: transparent;
+    outline: 0;
+    padding: 1px 41px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-position: 370px;
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 26px;
+}
+
+.botao_cadastro_perfil {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 292px;
+    height: 55px;
+    background-color: #0D2538;
+    box-shadow: 6px 10px 35px -10px #0D2538;
+    border-style: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.2vw;
+    font-family: 'Noto Serif SC';
+    text-transform: uppercase;
+    margin-top: 38px;
+    margin-right: 116px;
+
+
+}
+
+.seta_cadastro_perfil {
+    height: 55px;
+    width: 60px;
+    margin-left: 14px;
+}
+
+.container_info_perfil {
+    flex-direction: column;
+    height: 40px;
+    width: 400px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(62, 81, 143, 0.7);
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.botao_cdSala_perfil {
+    width: 300px;
+    height: 35px;
+    margin-top: 14px;
+    background-color: #0D2538;
+    box-shadow: 6px 10px 35px -10px #2C344F;
+    color: #fff;
+    font-size: 17px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.botao_cdSala_escolha_perfil {
+    width: 300px;
+    height: 35px;
+    margin-top: 14px;
+    background-color: #0D2538;
+    box-shadow: 6px 10px 35px -10px #2C344F;
+    color: #fff;
+    font-size: 17px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.botao_cdSala_excluir_perfil {
+    width: 300px;
+    height: 35px;
+    margin-top: 14px;
+    background-color: red;
+    box-shadow: 6px 10px 35px -10px #2C344F;
+    color: #fff;
+    font-size: 17px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+/*=============================== PERFIL ===================================================== */
